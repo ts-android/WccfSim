@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, WccfSimActivity!</string>
+    <string name="app_name">WccfSim</string>
+    <string name="button02_label">Back</string>
+    <string name="gosub">Go SubActivity</string>
+	<string-array name="pos_data">
+		<item>-----NO CHOICE-----</item>
+    	<item>GK</item>
+		<item>DF</item>
+		<item>MF</item>
+    	<item>FW</item>
+	</string-array>
+	<string-array name="group_data">
+		<item>-----NO CHOICE-----</item>
+		<item>A</item>
+		<item>B</item>
+		<item>C</item>
+		<item>D</item>
+		<item>E</item>
+		<item>F</item>
+		<item>G</item>
+		<item>H</item>
+		<item>I</item>
+		<item>J</item>
+		<item>K</item>
+		<item>L</item>
+	</string-array>
+	<string-array name="nationality_data">
+		<item>-----NO CHOICE-----</item>
+		<item>ALBANIA</item>
+		<item>ALGERIA</item>
+		<item>ARGENTINA</item>
+		<item>ARMENIA</item>
+		<item>AUSTRALIA</item>
+		<item>AUSTRIA</item>
+		<item>BELGIUM</item>
+		<item>BIH(bosnia)</item>
+		<item>BELARUS</item>
+		<item>BOLIVIA</item>
+		<item>BRAZIL</item>
+		<item>BULGARIA</item>
+		<item>Burkina Faso</item>
+		<item>CANADA</item>
+		<item>CHILE</item>
+		<item>COTED IVOIRE</item>
+		<item>CAMEROON</item>
+		<item>COD(congo_d)</item>
+		<item>COLOMBIA</item>
+		<item>COSTARICA</item>
+		<item>CROATIA</item>
+		<item>CZECH</item>
+		<item>DENMARK</item>
+		<item>ECUADOR</item>
+		<item>EGYPT</item>
+		<item>ENGLAND</item>
+		<item>FINLAND</item>
+		<item>FRANCE</item>
+		<item>GEORGIA</item>
+		<item>GERMANY</item>
+		<item>GHANA</item>
+		<item>GREECE</item>
+		<item>GUINIEA</item>
+		<item>HONDURAS</item>
+		<item>HUNGARY</item>
+		<item>IRAN</item>
+		<item>IRELAND</item>
+		<item>ISLAND</item>
+		<item>ISRAEL</item>
+		<item>ITALY</item>
+		<item>JAPAN</item>
+		<item>Kenya</item>
+		<item>KOREA</item>
+		<item>LIBERIA</item>
+		<item>LIECHTENSTEIN</item>
+		<item>LITHUANIA</item>
+		<item>MOROCCO</item>
+		<item>MEXICO</item>
+		<item>MEXICO</item>
+		<item>MALI</item>
+		<item>MONTENEGRO</item>
+		<item>NETHERLANDS</item>
+		<item>NIGERIA</item>
+		<item>NOTHERN IRELAND</item>
+		<item>NORWAY</item>
+		<item>PARAGUAY</item>
+		<item>PERU</item>
+		<item>POLAND</item>
+		<item>PORTUGAL</item>
+		<item>ROMANIA</item>
+		<item>SOUTH AFRICA</item>
+		<item>RUSSIA</item>
+		<item>SCG(Serbia &amp; M gro)</item>
+		<item>SCOTLAND</item>
+		<item>SENEGAL</item>
+		<item>SERBIA</item>
+		<item>SIERRA LEONE</item>
+		<item>SLOVENIA</item>
+		<item>SPAIN</item>
+		<item>SWITZERLAND</item>
+		<item>SURINAME</item>
+		<item>SLOVAKIA</item>
+		<item>SWEDEN</item>
+		<item>TOGO</item>
+		<item>TUNISIA</item>
+		<item>TURKEY</item>
+		<item>UKRAINE</item>
+		<item>URUGUAY</item>
+		<item>USA</item>
+		<item>VENEZUELA</item>
+		<item>WALES</item>
+		<item>YUGOSLAVIA</item>
+	</string-array>
+	<string-array name="club_data">
+		<item>-----NO CHOICE-----</item>
+		<item>1FC_Koln</item>
+		<item>Ajax</item>
+		<item>Arsenal</item>
+		<item>Atalanta</item>
+		<item>Augsburg</item>
+		<item>AZ</item>
+		<item>A_Madrid</item>
+		<item>Barcelona</item>
+		<item>Bayern</item>
+		<item>Benfica</item>
+		<item>Betis</item>
+		<item>Boca</item>
+		<item>Bochum</item>
+		<item>Bologna</item>
+		<item>Bordeaux</item>
+		<item>Bremen</item>
+		<item>Brescia</item>
+		<item>Catania</item>
+		<item>Celtic</item>
+		<item>Chelsea</item>
+		<item>Chievo</item>
+		<item>Como</item>
+		<item>CSKA</item>
+		<item>Deportivo</item>
+		<item>Dortmund</item>
+		<item>Empoli</item>
+		<item>Everton</item>
+		<item>FCTokyo</item>
+		<item>Feyenoord</item>
+		<item>Fiorentina</item>
+		<item>Flamengo</item>
+		<item>Frankfurt</item>
+		<item>Genoa</item>
+		<item>Grenoble</item>
+		<item>Hiratsuka</item>
+		<item>Hiroshima</item>
+		<item>HSV</item>
+		<item>Ichihara</item>
+		<item>Inter</item>
+		<item>Iwata</item>
+		<item>Juventus</item>
+		<item>Kashima</item>
+		<item>Kawasaki1</item>
+		<item>Kawasaki2</item>
+		<item>Kobe</item>
+		<item>LAGalaxy</item>
+		<item>Lazio</item>
+		<item>Lecce</item>
+		<item>Le_Mans</item>
+		<item>Lierse</item>
+		<item>Lille</item>
+		<item>Liverpool</item>
+		<item>Lyon</item>
+		<item>Mallorca</item>
+		<item>Manchester</item>
+		<item>Maritimo</item>
+		<item>Marseille</item>
+		<item>Mazda</item>
+		<item>Messina</item>
+		<item>Milan</item>
+		<item>Modena</item>
+		<item>Nagoya</item>
+		<item>Napoli</item>
+		<item>Newcastle</item>
+		<item>Nissan</item>
+		<item>Osaka1</item>
+		<item>Osaka2</item>
+		<item>Parma</item>
+		<item>Perugia</item>
+		<item>Piacenza</item>
+		<item>Porto</item>
+		<item>PSG</item>
+		<item>PSV</item>
+		<item>Reggina</item>
+		<item>River</item>
+		<item>Roma</item>
+		<item>R_Madrid</item>
+		<item>Salzburg</item>
+		<item>Sampdoria</item>
+		<item>Santos</item>
+		<item>Sao_paulo</item>
+		<item>Sapporo</item>
+		<item>Schalke</item>
+		<item>Sevilla</item>
+		<item>Shimizu</item>
+		<item>Stuttgart</item>
+		<item>Torino</item>
+		<item>Tottri</item>
+		<item>Udinese</item>
+		<item>Urawa</item>
+		<item>Valencia</item>
+		<item>Venezia</item>
+		<item>Verona</item>
+		<item>Villarreal</item>
+		<item>VVV</item>
+		<item>WBA</item>
+		<item>Wolfsburg</item>
+		<item>Yanmar</item>
+		<item>Yokohama1</item>
+		<item>Yokohama2</item>
+		<item>Yokohama3</item>
+	</string-array>
+</resources>

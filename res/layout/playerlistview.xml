@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+    <TableRow
+    	android:id="@+id/tableRow1"
+    	android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:layout_width="0dp"
+			android:id="@+id/txt_listcardno"/>
+		<TextView
+			android:layout_width="0dp"
+			android:id="@+id/txt_listcardver"/>
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:textSize="18sp"
+			android:id="@+id/txt_listname"
+			android:layout_weight="1"/>
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:textSize="18sp"
+			android:id="@+id/txt_listgroup"
+			android:layout_weight="1"/>
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:textSize="18sp"
+			android:id="@+id/txt_listnationality"
+			android:layout_weight="1"/>
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:textSize="18sp"
+			android:id="@+id/txt_listclub"
+			android:layout_weight="1"/>
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:textSize="18sp"
+			android:id="@+id/txt_listpos"
+			android:layout_weight="1"/>
+	</TableRow>
+</TableLayout>

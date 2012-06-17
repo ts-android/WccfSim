@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+    <TableLayout
+    	android:id="@+id/tbl_condition"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+        <TableRow
+        	android:id="@+id/row_1"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content">
+            <TextView
+            	android:id="@+id/txt_name"
+            	android:text="name : "
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content" />
+            <EditText
+            	android:id="@+id/etxt_name"
+            	android:layout_width="0pt"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:singleLine="true"/>
+        </TableRow>
+        <TableRow
+        	android:id="@+id/row_2"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content">
+            <TextView
+            	android:id="@+id/txt_group"
+            	android:text="group : "
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"/>
+            <Spinner
+            	android:id="@+id/spn_group"
+            	android:layout_width="0pt"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1" />
+            <TextView
+            	android:id="@+id/txt_nationality"
+            	android:text="nationality : "
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:paddingLeft="10pt"/>
+            <Spinner
+            	android:id="@+id/spn_nationality"
+            	android:layout_width="0pt"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1" />
+        </TableRow>
+        <TableRow
+        	android:id="@+id/row_3"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content">
+            <TextView
+            	android:id="@+id/txt_club"
+            	android:text="club : "
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content" />
+            <Spinner
+            	android:id="@+id/spn_club"
+            	android:layout_width="0pt"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1" />
+            <TextView
+            	android:id="@+id/txt_pos"
+            	android:text="position : "
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:paddingLeft="10pt"/>
+            <Spinner
+            	android:id="@+id/spn_pos"
+            	android:layout_width="0pt"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1" />
+        </TableRow>
+        <TableRow
+        	android:id="@+id/row_4"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content">
+            <TextView
+            	android:id="@+id/txt_offence"
+            	android:text="offence : "
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content" />
+            <EditText
+            	android:id="@+id/etxt_offence_val"
+            	android:layout_width="0pt"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:singleLine="true"/>
+            <TextView
+            	android:id="@+id/txt_deffence"
+            	android:text="deffence : "
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:paddingLeft="10pt"/>
+            <EditText
+            	android:id="@+id/etxt_deffence_val"
+            	android:layout_width="0pt"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:singleLine="true"/>
+            <TextView
+            	android:id="@+id/txt_technic"
+            	android:text="technic : "
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:paddingLeft="10pt"/>
+            <EditText
+            	android:id="@+id/etxt_technic_val"
+            	android:layout_width="0pt"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:singleLine="true"/>
+            <TextView
+            	android:id="@+id/txt_power"
+            	android:text="power : "
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:paddingLeft="10pt"/>
+            <EditText
+            	android:id="@+id/etxt_power_val"
+            	android:layout_width="0pt"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:singleLine="true"/>
+        </TableRow>
+        <TableRow
+        	android:id="@+id/row_5"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content">
+            <TextView
+            	android:id="@+id/txt_speed"
+            	android:text="speed : "
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content" />
+            <EditText
+            	android:id="@+id/etxt_speed_val"
+            	android:layout_width="0pt"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:singleLine="true"/>
+            <TextView
+            	android:id="@+id/txt_stamina"
+            	android:text="stamina : "
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:paddingLeft="10pt"/>
+            <EditText
+            	android:id="@+id/etxt_stamina_val"
+            	android:layout_width="0pt"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:singleLine="true"/>
+            <TextView
+            	android:id="@+id/txt_total"
+            	android:text="total : "
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:paddingLeft="10pt"/>
+            <EditText
+            	android:id="@+id/etxt_total_val"
+            	android:layout_width="0pt"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"
+            	android:singleLine="true"/>
+            <TextView
+            	android:id="@+id/txt_adjust"
+            	android:text=""
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_weight="1"/>
+            </TableRow>
+    </TableLayout>
+    <TableLayout android:id="@+id/tbl_button" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right">
+            <Button android:id="@+id/btn_search" android:text="Search" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+            <Button android:id="@+id/btn_set" android:text="Set" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+            <Button android:id="@+id/btn_return" android:text="Return" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+        </TableRow>
+    </TableLayout>
+    <ListView android:id="@+id/list_searchresult" android:layout_height="wrap_content" android:layout_width="match_parent"></ListView>
+</LinearLayout>
