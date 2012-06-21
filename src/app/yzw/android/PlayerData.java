@@ -8,6 +8,7 @@ public class PlayerData {
 	private String m_nationality;
 	private String m_team;
 	private String m_position;
+	private Boolean m_selected = false;
 
 	public PlayerData( int id, String ver, String name, String group, String nationality, String team, String position)
 	{
@@ -53,5 +54,15 @@ public class PlayerData {
 	public String GetPosition()
 	{
 		return m_position;
+	}
+
+	public Boolean GetSelectState()
+	{
+		return m_selected;
+	}
+	
+	public void SetSelectState( Boolean state)
+	{
+		m_selected = state;
 	}
 }

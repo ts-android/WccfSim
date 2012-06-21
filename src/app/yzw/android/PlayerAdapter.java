@@ -3,6 +3,7 @@ package app.yzw.android;
 import java.util.List;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,6 +54,19 @@ public class PlayerAdapter extends ArrayAdapter<PlayerData> {
 		txt_group.setText(pdata.GetGroup());
 		txt_nationality.setText(pdata.GetNationality());
 		txt_pos.setText(pdata.GetPosition());
+		
+		int col = Color.BLACK;
+		if(pdata.GetSelectState() )
+		{
+			// ‘I‘ğó‘Ô‚Å‚ ‚ê‚ÎF‚ğ•Ï‚¦‚é
+			col = Color.rgb(204,255,153);
+			view.setBackgroundColor(col);
+		}
+		else
+		{
+			// –¢‘I‘ğó‘Ô‚Å‚ ‚ê‚Î•‚É–ß‚·
+			view.setBackgroundColor(col);
+		}
 		return view;
 	}
 

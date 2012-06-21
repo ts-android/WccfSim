@@ -35,12 +35,12 @@ public class DragImage extends Activity {
 	    		{
 	    			if (data != null)
 	    			{
-	    				// æ¤œç´¢ç”»é¢ã‹ã‚‰é¸æŠå¯¾è±¡ã®æƒ…å ±ã‚’å–å¾—
+	    				// ŒŸõ‰æ–Ê‚©‚ç‘I‘ğ‘ÎÛ‚Ìî•ñ‚ğæ“¾
 	    				Bundle extras = data.getExtras();
 						@SuppressWarnings("unchecked")
 						ArrayList<Integer> selectItemList = (ArrayList<Integer>)extras.get("value");
 
-	    				// å–å¾—ã—ãŸçµæœã‚’ç”»é¢ã«åæ˜ 
+	    				// æ“¾‚µ‚½Œ‹‰Ê‚ğ‰æ–Ê‚É”½‰f
 	    				DragImageView div = ((DragImageView)findViewById(R.id.dragImageView1));
 	    				for (Integer item : selectItemList) {
 	    					div.addPlayer(this, item);

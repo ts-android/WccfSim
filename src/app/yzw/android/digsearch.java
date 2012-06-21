@@ -23,7 +23,7 @@ public class digsearch extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.searchview);
 
-        // ãƒã‚¸ã‚·ãƒ§ãƒ³ãƒªã‚¹ãƒˆã®æ–‡è¨€è¨­å®š
+        // ƒ|ƒWƒVƒ‡ƒ“ƒŠƒXƒg‚Ì•¶Œ¾İ’è
         Spinner spn_position = (Spinner)findViewById(R.id.spn_pos);
         ArrayAdapter<String> pos_data = new ArrayAdapter<String>(
       	      this,
@@ -32,7 +32,7 @@ public class digsearch extends Activity {
         pos_data.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spn_position.setAdapter(pos_data);
 
-        // ã‚¯ãƒ©ãƒ–ãƒªã‚¹ãƒˆã®æ–‡è¨€è¨­å®š
+        // ƒNƒ‰ƒuƒŠƒXƒg‚Ì•¶Œ¾İ’è
         Spinner spn_club = (Spinner)findViewById(R.id.spn_club);
         ArrayAdapter<String> club_data = new ArrayAdapter<String>(
       	      this,
@@ -41,7 +41,7 @@ public class digsearch extends Activity {
         club_data.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spn_club.setAdapter(club_data);
 
-        // ã‚°ãƒ«ãƒ¼ãƒ—ãƒªã‚¹ãƒˆã®æ–‡è¨€è¨­å®š
+        // ƒOƒ‹[ƒvƒŠƒXƒg‚Ì•¶Œ¾İ’è
         Spinner spn_group = (Spinner)findViewById(R.id.spn_group);
         ArrayAdapter<String> group_data = new ArrayAdapter<String>(
       	      this,
@@ -50,7 +50,7 @@ public class digsearch extends Activity {
         group_data.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spn_group.setAdapter(group_data);
 
-        // å›½ç±ãƒªã‚¹ãƒˆã®æ–‡è¨€è¨­å®š
+        // ‘ĞƒŠƒXƒg‚Ì•¶Œ¾İ’è
         Spinner spn_nationality = (Spinner)findViewById(R.id.spn_nationality);
         ArrayAdapter<String> nationality_data = new ArrayAdapter<String>(
       	      this,
@@ -59,7 +59,7 @@ public class digsearch extends Activity {
         nationality_data.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spn_nationality.setAdapter(nationality_data);
 
-        // ãƒœã‚¿ãƒ³ã®ã‚¤ãƒ™ãƒ³ãƒˆè¨­å®š
+        // ƒ{ƒ^ƒ“‚ÌƒCƒxƒ“ƒgİ’è
         Button btn_search = (Button)findViewById(R.id.btn_search);
         btn_search.setOnClickListener(_OnClickListenerHandle_Serch);
 
@@ -74,12 +74,12 @@ public class digsearch extends Activity {
     private OnClickListener _OnClickListenerHandle_Set = new  OnClickListener()
     {
     	public void onClick(View v) {
-    	    // è¿”å´ãƒ‡ãƒ¼ã‚¿ã®è¨­å®š
+    	    // •Ô‹pƒf[ƒ^‚Ìİ’è
     		Intent data = new Intent();
     		data.putExtra("value", m_selectItemList);
-    		// çµæœã®è¿”å´
+    		// Œ‹‰Ê‚Ì•Ô‹p
     		setResult(RESULT_OK, data);
-    		// æ¤œç´¢ç”»é¢ã®çµ‚äº†
+    		// ŒŸõ‰æ–Ê‚ÌI—¹
     		finish();
     	}
     };
@@ -87,7 +87,7 @@ public class digsearch extends Activity {
     private OnClickListener _OnClickListenerHandle_Ret = new  OnClickListener()
     {
     	public void onClick(View v) {
-    		// æ¤œç´¢ç”»é¢ã®çµ‚äº†
+    		// ŒŸõ‰æ–Ê‚ÌI—¹
     		finish();
     	}
     };
@@ -117,14 +117,16 @@ public class digsearch extends Activity {
     	public void onItemClick(android.widget.AdapterView<?> arg0, View arg1, int arg2, long arg3)
     	{
             ListView listView = (ListView) arg0;
-            int selectid = ((PlayerData) listView.getSelectedItem()).GetId();
-            // é¸æŠIDãŒå­˜åœ¨ã—ãªã‘ã‚Œã°ã€ãƒªã‚¹ãƒˆã«è¿½åŠ 
+            int selectid = ((PlayerData) listView.getItemAtPosition(arg2)).GetId();
+            // ‘I‘ğID‚ª‘¶İ‚µ‚È‚¯‚ê‚ÎAƒŠƒXƒg‚É’Ç‰Á
             if( m_selectItemList.contains(selectid) == false )
             {
+            	((PlayerData) listView.getItemAtPosition(arg2)).SetSelectState( true );
             	m_selectItemList.add(selectid);
             }
             else
             {
+            	((PlayerData) listView.getItemAtPosition(arg2)).SetSelectState( false );
             	m_selectItemList.remove((Object)selectid);
             }
     	};
